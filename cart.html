@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- <link rel="stylesheet" href="../../Pages/Cart/cart-style.css" /> -->
+  <style>
+    /* Customize the buttons */
+    .container h2 {
+      font-family: "Times New Roman", Times, serif;
+      font-style: italic;
+      font-weight: bolder;
+    }
+
+    /* Customize the form input */
+    .form-control {
+      width: 60px;
+    }
+
+    
+    .row {
+      margin-bottom: 20px;
+    }
+
+    /* Customize the buttons for small screens */
+    @media (max-width: 576px) {
+      .btn {
+        width: 30px;
+        height: 30px;
+        /* Add some margin classes here */
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .form-control {
+        width: 30px;
+        height: 30px;
+      }
+
+      /* Use d-flex and align-items-center classes here */
+      .input-group {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    @media (min-width: 768px) {
+      #set {
+        margin-top: 13%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header"></div>
+  <div class="container">
+    <div class="row">
+      
+      <div class="col-md-8">
+        <!-- Cart items -->
+        <br><h2 style="color: rgb(198, 79, 198); text-decoration: underline; text-align: center;">Items In Cart</h2><br>
+        <div class="row" style="border: 1px solid black; padding: 20px 0;">
+          <!-- First item -->
+          <div class="col-4">
+            <img src="./AllImage/means pants/pepe.webp" alt="Product 1" class="img-fluid" style="height: 150px;" />
+          </div>
+          <div class="col-4">
+            <p>Pepe Pant</p>
+            <p>₹1499</p>
+            <button class="btn btn-danger">
+              <i class="fa fa-trash"></i>
+            </button>
+          </div>
+          <div class="col-4">
+            <form>
+              <!-- Use input group here -->
+              <div class="input-group">
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa fa-minus"></i>
+                </button>
+                <input type="number" value="1" min="1" max="10" class="form-control mx-lg-3 mx-sm-2 mx-md-2" />
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Second item -->
+        <div class="row" style="border: 1px solid black; padding: 20px 0; margin-bottom: 0%;" >
+          <div class="col-4">
+            <img src="./AllImage/Hoodies img/grey1.jpg" alt="Product 2" class="img-fluid" style="height: 150px;" />
+          </div>
+          <div class="col-4">
+            <p>Grey Hoodie</p>
+            <p>₹900</p>
+            <button class="btn btn-danger">
+              <i class="fa fa-trash"></i>
+            </button>
+          </div>
+          <div class="col-4">
+            <form>
+
+              <!-- Use input group here -->
+
+              <div class="input-group">
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa fa-minus"></i>
+                </button>
+                <input type="number" value="2" min="1" max="10" class="form-control mx-lg-3 mx-sm-2 mx-md-2" />
+                <button type="button" class="btn btn-secondary">
+                  <i class="fa fa-plus"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Summary page -->
+
+      <div class="col-md-4">
+        <!-- Summary card -->
+        <div id="set">
+          <div class="card">
+            <div class="card-header"><b>Summary</b></div>
+            <div class="card-body">
+              <!-- Use a row and two columns here -->
+              <div class="row">
+                <div class="col-6">
+                  <p><b>Product price:</b></p>
+                </div>
+                <div class="col-6">
+                  <!-- Add text-right class here -->
+                  <p class="text-right">₹5800</p>
+                </div>
+              </div>
+              <!-- Use a row and two columns here -->
+              <div class="row">
+                <div class="col-6">
+                  <p><b>Shipping:</b></p>
+                </div>
+                <div class="col-6">
+                  <!-- Add text-right class here -->
+                  <p class="text-right">₹200</p>
+                </div>
+              </div>
+              <hr />
+              <!-- Use a row and two columns here -->
+              <div class="row">
+                <div class="col-6">
+                  <p><b>Total:</b></p>
+                </div>
+                <div class="col-6">
+                  <!-- Add text-right class here -->
+                  <p class="text-right">₹6000</p>
+                </div>
+              </div>
+              <!-- Add float-right class here -->
+              <button onclick="myfunction()" type="button" id="Checkout" class="btn btn-primary d-flex justify-content-center mt-auto mx-lg-5 w-50">
+                Checkout
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="set">
+    <div id="footer"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+  <script>
+    fetch("../Header-Footer/header.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("header").innerHTML = html;
+      });
+    // Fetch and insert the footer
+    fetch("../Header-Footer/footer.html")
+      .then(response => response.text())
+      .then(html => {
+        document.getElementById("footer").innerHTML = html;
+      });
+  </script>
+
+  <!-- Script for increse and decrease buttons -->
+  <script>
+
+    //Js order Place message by function
+    function myfunction(){
+      document.getElementById("Checkout");
+      alert("Order Placed")
+    }
+
+    // Add your JavaScript code here 
+    var minusButtons = document.querySelectorAll(".btn-secondary .fa-minus");
+    var plusButtons = document.querySelectorAll(".btn-secondary .fa-plus");
+    var inputs = document.querySelectorAll(".form-control");
+
+    // Loop through the buttons and inputs
+    for (var i = 0; i < minusButtons.length; i++) {
+      // Add click event listener to each minus button
+      minusButtons[i].addEventListener("click", function () {
+        // Get the index of the clicked button
+        var index = Array.prototype.indexOf.call(minusButtons, this);
+        // Get the corresponding input
+        var input = inputs[index];
+        // Get the current value of the input
+        var value = parseInt(input.value);
+        // Decrease the value by one if it is greater than one
+        if (value > 1) {
+          value--;
+          input.value = value;
+        }
+      });
+
+      // Add click event listener to each plus button
+      plusButtons[i].addEventListener("click", function () {
+        // Get the index of the clicked button
+        var index = Array.prototype.indexOf.call(plusButtons, this);
+        // Get the corresponding input
+        var input = inputs[index];
+        // Get the current value of the input
+        var value = parseInt(input.value);
+        // Increase the value by one if it is less than ten
+        if (value < 10) {
+          value++;
+          input.value = value;
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

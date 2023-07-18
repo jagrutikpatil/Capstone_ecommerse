@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <!--  Adding Footer Style Using Internal CSS -->
+    <style>
+      /* Footer Style Start */
+
+      .footer {
+        background-color: #343a40;
+        color: #ffffff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      /* For styling ul of footer*/
+      .footer ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .footer ul li {
+        margin-bottom: 5px;
+      }
+     
+      @media (max-width: 767px) {
+        .footer .container .row .col-lg-3 {
+          margin-left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      body {
+        min-height: 100vh;
+      }
+      .footer {
+        background-color: #343a40;
+        color: #ffffff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .footer ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      .footer ul li {
+        margin-bottom: 5px;
+      }
+
+      .footer ul li a{
+        color: #ffffff;
+        text-decoration: none;
+      }
+      .footer ul li a:hover{
+        color: rgb(210, 131, 210);
+        padding: 4px;
+        /* transition: 1s; */
+        transition-duration: 1s;
+      }
+
+      @media (max-width: 767px) {
+        .footer .container .row .col-lg-3 {
+          margin-left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- i use class footer for footer part -->
+    <footer class="footer" class="text-center">
+      <div class="container">
+        <div class="row">
+          <!-- Women section -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Women</h3>
+            <ul>
+              <li>
+                <a href="../Product page/womendresses.html">All Products</a>
+              </li>
+              <li>
+                <a href="../Product page/womendresses.html"
+                  >Dresses</a
+                >
+              </li>
+              <li>
+                <a href="../Product page/women.pant.html">Pants</a>
+              </li>
+              <li>
+                <a href="../Product page/womenskirts.html">Skirts</a>
+              </li>
+            </ul>
+          </div>
+          <!-- mens section  -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Men</h3>
+            <ul>
+              <li>
+                <a href="../Product page/men.html">All Products</a>
+              </li>
+              <li>
+                <a href="../Product page/shirts.html">Shirt</a>
+              </li>
+              <li>
+                <a href="../Product page/pants.html">Pants</a>
+              </li>
+              <li>
+                <a href="../Product page/hoodies.html">Hoodies</a>
+              </li>
+            </ul>
+          </div>
+          <!-- kids section  -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Kids</h3>
+            <ul>
+              <li>
+                <a href="../Product page/kids.html">All Products</a>
+              </li>
+            </ul>
+          </div>
+          <!-- links section  -->
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="../home.html">Home</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="../login.html">Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p class="text-center mb-0">
+        &copy; 2023 Marley's Fashion. All rights reserved.
+        <h6 style="text-align: center; font-size: 10px;">By Jagruti Patil</h6>
+      </p>
+    </footer>
+  </body>
+</html>
