@@ -1,2 +1,1 @@
-# Capstone_ecommerse
-Shopping App
+https://capstoneecomerseeproject.netlify.app/
